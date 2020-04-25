@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    color: white ;
+    font-family: cursive;
+}
+
+#try{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+);
+position: relative;
+background-size: 400%;
+animation: slide 20s ease-in-out infinite;
+}
+
+h4{
+    letter-spacing: 5px;
+    padding:0px 10px;
+    color: aliceblue;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border: 3px solid white ;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+@keyframes slide{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position:100% 0%;
+    }
+    100%{
+        background-position: 0% 100%;
+    }
+}
